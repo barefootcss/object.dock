@@ -1,0 +1,90 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+// 
+// Features:
+// 
+
+$bare-dock--t:						false !default;
+$bare-dock--b:						false !default;
+$bare-dock--l:						false !default;
+$bare-dock--r:						false !default;
+
+
+/* 
+   #dock
+   ========================================================================== */
+
+/**
+ * The dock object snaps content to a side of the page.
+ *
+ * Usage:
+ *
+ * <div class="dock"></div>
+ */
+
+.#{$bare-ns}dock {
+	position: fixed;
+	z-index: 1;
+}
+
+// 
+// #dock--t
+// ========================================================================== 
+
+@if ($bare-dock--t == true) {
+
+	.#{$bare-ns}dock--t {
+
+		width: 100%;
+		top: 0;
+
+	}
+
+}
+
+// 
+// #dock--b
+// ========================================================================== 
+
+@if ($bare-dock--b == true) {
+
+	.#{$bare-ns}dock--b {
+
+		width: 100%;
+		bottom: 0;
+
+	}
+
+}
+
+// 
+// #dock--l
+// ========================================================================== 
+
+@if ($bare-dock--l == true) {
+
+	.#{$bare-ns}dock--l {
+
+		height: 100%;
+		left: 0;
+
+	}
+
+}
+
+// 
+// #dock--r
+// ========================================================================== 
+
+@if ($bare-dock--r == true) {
+
+	.#{$bare-ns}dock--r {
+
+		height: 100%;
+		right: 0;
+
+	}
+
+}
