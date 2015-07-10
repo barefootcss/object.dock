@@ -21,10 +21,10 @@ $bare-dock--r:						false !default;
  *
  * Usage:
  *
- * <div class="dock"></div>
+ * <div class="o-dock"></div>
  */
 
-.#{$bare-ns}dock {
+.o-dock {
 	position: fixed;
 	z-index: 1;
 	max-width: $bare-page-max-width;
@@ -36,11 +36,9 @@ $bare-dock--r:						false !default;
 
 @if ($bare-dock--t == true) {
 
-	.#{$bare-ns}dock--t {
-
+	.o-dock--t {
 		width: 100%;
 		top: 0;
-
 	}
 
 }
@@ -51,11 +49,9 @@ $bare-dock--r:						false !default;
 
 @if ($bare-dock--b == true) {
 
-	.#{$bare-ns}dock--b {
-
+	.o-dock--b {
 		width: 100%;
 		bottom: 0;
-
 	}
 
 }
@@ -66,11 +62,9 @@ $bare-dock--r:						false !default;
 
 @if ($bare-dock--l == true) {
 
-	.#{$bare-ns}dock--l {
-
+	.o-dock--l {
 		height: 100%;
 		left: 0;
-
 	}
 
 }
@@ -81,11 +75,9 @@ $bare-dock--r:						false !default;
 
 @if ($bare-dock--r == true) {
 
-	.#{$bare-ns}dock--r {
-
+	.o-dock--r {
 		height: 100%;
 		right: 0;
-
 	}
 
 }
